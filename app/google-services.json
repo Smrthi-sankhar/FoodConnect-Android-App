@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1007688797191",
+    "project_id": "food-connect-3ee94",
+    "storage_bucket": "food-connect-3ee94.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007688797191:android:866414353686a717ef6ea2",
+        "android_client_info": {
+          "package_name": "com.example.foodconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9JsNWpIWA6TulRYGxUYTZ72l7_94ojzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

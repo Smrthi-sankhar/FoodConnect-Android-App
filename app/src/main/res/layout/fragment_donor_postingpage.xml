@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Donor_FoodPostingPage">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fitsSystemWindows="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@android:color/transparent"/>
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nourish lives with kindness💖  "
+                android:textSize="22sp"
+               android:fontFamily="@font/lora_bolditalic"
+                android:textColor="#10003d"
+                android:layout_gravity="center"
+                android:paddingBottom="40dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel Name"
+                android:textSize="19sp"
+                android:fontFamily="@font/lora_semibold"
+                android:textColor="#10003d"
+                android:layout_gravity="left"
+                android:paddingBottom="16dp"/>
+
+            <!-- Food Name -->
+            <EditText
+                android:id="@+id/et_hotel_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:hint="alangar restaurant"
+                android:padding="12dp"
+                android:elevation="5dp"
+                android:textColor="@color/black"
+                android:background="@drawable/floatbox"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List the foods"
+                android:textSize="19sp"
+                android:fontFamily="@font/lora_semibold"
+                android:textColor="#10003d"
+                android:layout_gravity="left"
+                android:paddingBottom="16dp"/>
+
+            <!-- Food Name -->
+            <EditText
+                android:id="@+id/et_food_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:hint="Food Name (e.g., Biryani, Roti, Curry)"
+                android:padding="12dp"
+                android:elevation="5dp"
+                android:textColor="@color/black"
+                android:background="@drawable/floatbox"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+
+
+            <!-- Quantity -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="19sp"
+                android:fontFamily="@font/lora_semibold"
+                android:textColor="#10003d"
+                android:layout_gravity="left"
+                android:paddingBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/et_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity (e.g., 10 plates, 5 packs)"
+                android:padding="12dp"
+                android:elevation="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/floatbox"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Pickup Location -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup Location"
+                android:textSize="19sp"
+                android:fontFamily="@font/lora_semibold"
+                android:textColor="#10003d"
+                android:layout_gravity="left"
+                android:paddingBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/et_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pickup Location"
+                android:padding="12dp"
+                android:elevation="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/floatbox"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+
+            <!-- Preparation Time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preparation Time"
+                android:textSize="19sp"
+                android:fontFamily="@font/lora_semibold"
+                android:textColor="#10003d"
+                android:layout_gravity="left"
+                android:paddingBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/et_preparation_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prepared At (e.g., 2 PM)"
+                android:padding="12dp"
+                android:elevation="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/floatbox"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Expiry Time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry Time"
+                android:textSize="19sp"
+                android:fontFamily="@font/lora_semibold"
+                android:textColor="#10003d"
+                android:layout_gravity="left"
+                android:paddingBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/et_expiry_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Best Before (e.g., 9 PM  or 2 days)"
+                android:padding="12dp"
+                android:elevation="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/floatbox"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Contact Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:textSize="19sp"
+                android:fontFamily="@font/lora_semibold"
+                android:textColor="#10003d"
+                android:layout_gravity="left"
+                android:paddingBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/et_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Number"
+                android:padding="12dp"
+                android:elevation="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/floatbox"
+                android:textSize="16sp"
+                android:inputType="phone"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Special Notes -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special Notes"
+                android:textSize="19sp"
+                android:fontFamily="@font/lora_semibold"
+                android:textColor="#10003d"
+                android:layout_gravity="left"
+                android:paddingBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/et_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/floatbox"
+                android:hint="Special Notes (e.g., Spicy food, Contains nuts)"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:textSize="16sp"
+                android:elevation="5dp"
+                android:layout_marginBottom="16dp"/>
+
+
+            <!-- Submit Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                android:background="@drawable/bluecolorbox"
+                android:text="Post Food"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lora_semibold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>
+
